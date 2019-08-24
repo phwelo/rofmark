@@ -22,7 +22,7 @@ def import_json(file):
 
 def bookmark_menu(data):
     # start out with only the search option
-    rofi_list = ['search']
+    rofi_list = []
     # iterate and add in all of the alias items
     for key, _ in data.items():
         rofi_list.append(key)
