@@ -2,9 +2,7 @@
 
 from rofi import Rofi
 from subprocess import Popen, DEVNULL
-import os
-import json
-import urllib.parse
+import os, json, urllib.parse
 
 r = Rofi()
 
