@@ -9,10 +9,9 @@ import urllib.parse
 r = Rofi()
 
 # use xdg-open if you want, mine is fucked up though, so i'll just set it like this
-browser_path = "vivaldi-stable"
+browser_path = "xdg-open"
 bookmark_file = os.environ['HOME'] + '/aliases.json'
 search_string = 'https://duckduckgo.com/?q='
-
 
 def import_json(file):
     with open(file, "r") as read_file:
@@ -35,7 +34,6 @@ def bookmark_menu(data):
     if key < 0:
         return False
     return rofi_list[key]
-
 
 data = import_json(bookmark_file)
 selection_index = bookmark_menu(data)
